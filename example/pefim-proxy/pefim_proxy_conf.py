@@ -111,7 +111,7 @@ CONFIG = {
     "xmlsec_binary": xmlsec_path,
     "logger": {
         "rotating": {
-            "filename": "pefim_proxy_saml.log",
+            "filename": "logs/pefim_proxy_saml.log",
             "maxBytes": 500000,
             "backupCount": 5,
         },

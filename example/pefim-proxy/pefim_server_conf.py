@@ -17,7 +17,7 @@ else:
 ISSUER = "%s:%s" % (BASEURL, PORT)
 
 #Filename for log.
-LOG_FILE = 'pefim_server.log'
+LOG_FILE = 'logs/pefim_server.log'
 
 #If HTTPS is true you have to assign the server cert, key and certificate chain.
 SERVER_CERT = "httpsCert/localhost.crt"

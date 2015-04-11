@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER DIRG, dirg@umu.se
 
-VOLUME ["/opt/pefim-proxy"]
+VOLUME ["/opt/pefim-proxy", "/opt/pefim-proxy/logs"]
 
 ADD start.sh /start.sh
 ADD requirements.txt /opt/pefimproxy/requirements.txt
@@ -23,8 +23,8 @@ rm -rf /var/lib/apt/lists/*
 
 RUN pip install --upgrade pip
 RUN pip install -r /opt/pefimproxy/requirements.txt && \
-    pip install git+https://github.com/its-dirg/pefim-proxy.git@develop
-#    pip install git+https://github.com/its-dirg/pefim-proxy.git#egg=pefim-proxy
+#    pip install git+https://github.com/its-dirg/pefim-proxy.git@develop
+    pip install git+https://github.com/its-dirg/pefim-proxy.git#egg=pefim-proxy
 
 WORKDIR /
 
