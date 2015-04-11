@@ -1,0 +1,9 @@
+pefimproxy:
+  image: pefim_proxy
+  ports:
+   - "8999:8999"
+  hostname: localhost
+  volumes:
+   - pefim-proxy/:/opt/pefim-proxy
+   - pefim-proxy_logs:/opt/pefim-proxy/logs
+   - pefim-proxy_idp:/opt/pefim-proxy/idp
