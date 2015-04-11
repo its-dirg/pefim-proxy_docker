@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 
 MAINTAINER DIRG, dirg@umu.se
 
-VOLUME ["/opt/pefim-proxy", "/opt/pefim-proxy/logs"]
+VOLUME ["/opt/pefim-proxy", "/opt/pefim-proxy/logs", "/opt/pefim-proxy/idp"]
 
 ADD start.sh /start.sh
 ADD requirements.txt /opt/pefimproxy/requirements.txt
