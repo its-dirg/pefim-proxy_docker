@@ -1,5 +1,7 @@
 #!/bin/sh
 
+repository="itsdirg/pefim_proxy"
+
 # Check if running on mac
 if [ $(uname) = "Darwin" ]; then
 
@@ -18,5 +20,5 @@ else
     fi
 fi
 
-${sudo} docker rmi -f pefim_proxy
-${sudo} docker build -t pefim_proxy .
+${sudo} docker rmi -f ${repository}
+${sudo} docker build -t=${repository} .

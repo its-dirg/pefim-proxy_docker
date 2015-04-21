@@ -1,4 +1,4 @@
 #!/bin/sh
-cd /opt/pefim-proxy
+cd /opt/pefim/etc
 ./start.sh
 

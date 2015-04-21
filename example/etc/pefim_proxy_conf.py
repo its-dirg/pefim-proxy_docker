@@ -59,7 +59,7 @@ CONFIG = {
                     "fail_on_missing_requested": False
                 },
             },
-            "subject_data": ("dict", None), #"./idp/idp.subject",
+            "subject_data": ("dict", None), #"./db/idp.subject",
             "name_id_format": [NAMEID_FORMAT_TRANSIENT,
                                NAMEID_FORMAT_PERSISTENT],
             "want_authn_requests_signed": False
