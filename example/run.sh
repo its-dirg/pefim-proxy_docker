@@ -60,6 +60,9 @@ if ${sudo} docker ps | awk '{print $NF}' | grep -qx ${name}; then
 fi
 $sudo docker rm ${name} > /dev/null 2> /dev/null
 
+mkdir ./etc/logs > /dev/null 2> /dev/null
+mkdir ./etc/db > /dev/null 2> /dev/null
+
 ${sudo} docker run --rm=true \
     --name ${name} \
     --hostname localhost \
