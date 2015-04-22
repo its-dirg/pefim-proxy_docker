@@ -1,7 +1,7 @@
 .. _configuration:
 
 ***************
-PEFIM idp setup
+PEFIM proxy setup
 ***************
 
 Setting up PEFIM idp docker container
