@@ -18,7 +18,7 @@ Install PEFIM proxy using docker
 
 Download the PEFIM proxy docker project from: https://github.com/its-dirg/pefim-proxy_docker
 
-The scripts has been verified in OSX, CentOS and Ubuntu.
+The scripts has been verified in OS X Yosemite, CentOS 7 and Ubuntu 14.04.
 
 All files necessary to build the PEFIM idp image are located in the dockerfiles directory. To build the image run the script::
 
