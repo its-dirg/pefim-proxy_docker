@@ -65,6 +65,17 @@ To start the proxy run the script:</p>
 </pre></div>
 </div>
 </div>
+<div class="section" id="install-with-windows">
+<h2>Install with windows<a class="headerlink" href="#install-with-windows" title="Permalink to this headline">¶</a></h2>
+<p>If you are running windows there exists powershell scripts. The scripts are not signed so you have to give yourself
+permission to run them. One example to run the scripts:</p>
+<p>To build the image:
+cd [..]/dockerfiles/
+PowerShell.exe -ExecutionPolicy Bypass -File build.ps1</p>
+<p>To start:
+cd [..]/example/
+PowerShell.exe -ExecutionPolicy Bypass -File run.ps1</p>
+</div>
 </div>
 
 
@@ -78,6 +89,7 @@ To start the proxy run the script:</p>
 <li><a class="reference internal" href="#">Quick install guide</a><ul>
 <li><a class="reference internal" href="#install-docker">Install Docker</a></li>
 <li><a class="reference internal" href="#install-pefim-proxy-using-docker">Install PEFIM proxy using docker</a></li>
+<li><a class="reference internal" href="#install-with-windows">Install with windows</a></li>
 </ul>
 </li>
 </ul>

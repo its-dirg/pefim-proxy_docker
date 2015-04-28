@@ -29,3 +29,17 @@ If you want to test the PEFIM proxy, you can use the example proxy setup in the 
 To start the proxy run the script::
 
     example/run.sh
+
+Install with windows
+====================
+
+If you are running windows there exists powershell scripts. The scripts are not signed so you have to give yourself
+permission to run them. One example to run the scripts:
+
+To build the image:
+cd [..]/dockerfiles/
+PowerShell.exe -ExecutionPolicy Bypass -File build.ps1
+
+To start:
+cd [..]/example/
+PowerShell.exe -ExecutionPolicy Bypass -File run.ps1
