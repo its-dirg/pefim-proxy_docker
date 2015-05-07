@@ -5,6 +5,13 @@
 #   DOCKERARGS="--entrypoint /bin/bash" bash -x ./run.sh
 #
 
+c_path=$(pwd)
+cddir=$(dirname `which $0`)
+#Go to correct directory
+cd $cddir
+
+dir=$(pwd)
+
 # Name of config file
 conf=pefim_server_conf.py
 
@@ -49,8 +56,6 @@ do
 done
 
 port=$(cat ${volume}/${conf} | grep PORT | head -1 | sed 's/[^0-9]//g')
-
-dir=$(pwd)
 
 centos_or_redhat=$(cat /etc/centos-release 2>/dev/null | wc -l)
 
@@ -109,3 +114,6 @@ ${sudo} docker run --rm=true \
 if [ $(uname) = "Darwin" ] && [ ${port_b2d} = 1 ]; then
     VBoxManage controlvm "boot2docker-vm" natpf1 delete "${name}"
 fi
+
+#Return to starting path
+cd $c_path
