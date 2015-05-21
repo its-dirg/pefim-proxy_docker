@@ -1,5 +1,7 @@
 #!/bin/sh
 
+dir=$(dirname `which $0`)
+
 repository="itsdirg/pefim_proxy"
 
 # Check if running on mac
@@ -21,4 +23,4 @@ else
 fi
 
 ${sudo} docker rmi -f ${repository}
-${sudo} docker build -t=${repository} .
+${sudo} docker build -t=${repository} ${dir}
