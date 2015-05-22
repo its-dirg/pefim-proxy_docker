@@ -13,12 +13,20 @@ You can also find an example how to configure an run the docker image.
 This is a beta version and contains some temporary quick fixes to create a working proof of concept.
 The intention is to refactor the code and configuration if decided to use for production.
 
+.. toctree::
+   :maxdepth: 3
+
+   install
+
+.. toctree::
+    :maxdepth: 1
+
+    configuration
 
 Indices and tables
 ==================
 
-* :ref:`install`
-* :ref:`configuration`
+* :ref:`search`
 
 .. raw:: html
 
