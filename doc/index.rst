@@ -13,10 +13,23 @@ You can also find an example how to configure an run the docker image.
 This is a beta version and contains some temporary quick fixes to create a working proof of concept.
 The intention is to refactor the code and configuration if decided to use for production.
 
+.. toctree::
+   :maxdepth: 3
+
+   install
+
+.. toctree::
+    :maxdepth: 1
+
+    configuration
 
 Indices and tables
 ==================
 
-* :ref:`install`
-* :ref:`configuration`
+* :ref:`search`
 
+.. raw:: html
+
+    <a href="https://github.com/its-dirg/pefim-proxy_docker" class="github" target="_blank">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="_static/ViewmeonGitHub.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
