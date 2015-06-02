@@ -83,6 +83,8 @@ CONFIG = {
     "debug": 1,
     "key_file": full_path("proxy_cert/new_server.key"),
     "cert_file": full_path("proxy_cert/new_server.crt"),
+    "encryption_keypairs": [{"key_file":  full_path("proxy_cert/test.key"),
+                             "cert_file": full_path("proxy_cert/test.crt")}],
     "metadata": {
         #"mdfile": ["swamid2.md"],
         "local": [full_path("metadata/sp.xml"),
